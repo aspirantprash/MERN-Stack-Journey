@@ -81,7 +81,7 @@ This project is also a part of my journey toward becoming a **MERN Stack Develop
 * Improve accessibility
 * Convert the portfolio into React
 * Connect with a backend
-* Add dark/light mode
+* Add dark/light mode 
 
 ---
 
