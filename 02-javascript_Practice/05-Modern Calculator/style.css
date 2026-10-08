@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+
+    background: rgb(151, 183, 194)
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    background: #192b40;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+#brand{
+    background-color: #192b40;
+    text-align: center;
+    color: #3c5151;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 50px;
+    height:50px;
+    border-radius: 10px;
+    box-shadow: -5px -5px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #192b40;
+    cursor: pointer;
+    margin: 10px;
+    background: rgb(151, 183, 194);
+}
+
+form .operator{
+    font-weight: bold;
+}
+
+.mybtn{
+    width: 122px;
+    background: rgb(151, 183, 194);
+    color: #192b40;
+    font-weight: bold;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 0;
+    color: #222e3b;
+    border-radius: 2px;
+    
+}
+
+form .display input{
+    flex: 1;
+    text-align: right;
+    font-size: 31px;
+    box-shadow: none;
+}
+
+form input#btnequal{
+    width: 122px;
+}
+
+form input.operator{
+
+    color: #293b38;
+}
+
+#futr{
+    text-align: center;
+    color:  rgb(151, 183, 194);
+    margin-top: 5px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4f6fb">
+    <title>Modern Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="calculator">
+            <header id="brand">
+                <span>@Aspirant<span class="brand-light">Prash</span></span>
+                <span class="brand-icon" aria-hidden="true">:)</span> 
+            </header>
+
+            <form>
+
+                <div class="display">
+                    <input type="text" id="display" name="display">
+                </div>
+
+                <div>
+                    <input type="button" value="AC"  class="mybtn" id="btnclear">
+                    <input type="button" value="DEL"  class="mybtn" id="btndel">
+                    <input type="button" value="." class="operator">
+                    <input type="button" value="/" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="7" class="btn-number" id="btn7">
+                    <input type="button" value="8" class="btn-number" id="btn8">
+                    <input type="button" value="9" class="btn-number" id="btn9">
+                    <input type="button" value="*" class="operator" id="btnmul">
+                </div>
+                <div>
+                    <input type="button" value="4" class="btn-number" id="btn4">
+                    <input type="button" value="5" class="btn-number" id="btn5">
+                    <input type="button" value="6" class="btn-number" id="btn6">
+                    <input type="button" value="-" class="operator" id="btnsub">
+                </div>
+                <div>
+                    <input type="button" value="1" class="btn-number" id="btn1">
+                    <input type="button" value="2" class="btn-number" id="btn2">
+                    <input type="button" value="3" class="btn-number" id="btn3">
+                    <input type="button" value="+" class="operator" id="btnadd">
+                </div>
+                <div>
+                    <input type="button" value="00" class="btn-number" id="btn00">
+                    <input type="button" value="0" class="btn-number" id="btn0">
+                    <input type="button" value="="  class="mybtn" id="btnequal">
+                </div>
+
+            </form>
+
+            <!-- <footer id="futr">
+                <u><span>Simple things, beautifully calculated.</span></u>
+            </footer> -->
+        </div>
+
+        
+
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
