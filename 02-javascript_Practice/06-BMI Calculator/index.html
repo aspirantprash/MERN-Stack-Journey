@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f6fb" />
+
+    <title>BMI Calculator</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main class="container">
+      <!-- Header -->
+      <header class="header">
+        <h1>BMI Calculator</h1>
+
+        <p>
+          Calculate your Body Mass Index and understand your health category.
+        </p>
+      </header>
+
+      <div class="bmical">
+        <!-- Calculator Card -->
+        <section class="calculator-card">
+          <h2>Calculate Your BMI</h2>
+
+          <!-- Height -->
+          <div class="input-group">
+            <label for="height">Height</label>
+
+            <div class="input-box">
+              <input
+                type="number"
+                id="height"
+                placeholder="Enter your height"
+              />
+
+              <span>cm</span>
+            </div>
+          </div>
+
+          <!-- Weight -->
+          <div class="input-group">
+            <label for="weight">Weight</label>
+
+            <div class="input-box">
+              <input
+                type="number"
+                id="weight"
+                placeholder="Enter your weight"
+              />
+
+              <span>kg</span>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="buttons">
+            <button class="calculate-btn">Calculate BMI</button>
+
+            <button class="reset-btn">Reset</button>
+          </div>
+        </section>
+
+        <!-- Result Card -->
+        <section class="result">
+          <p class="result-title">YOUR BMI</p>
+
+          <h2 class="bmi-value">22.5</h2>
+
+          <p class="bmi-category">Normal Weight</p>
+
+          <!-- BMI Scale -->
+          <div class="scale">
+            <div class="scale-line"></div>
+
+            <div class="scale-points">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="scale-labels">
+            <span>Underweight</span>
+            <span>Normal</span>
+            <span>Overweight</span>
+            <span>Obese</span>
+          </div>
+        </section>
+      </div>
+
+      <!-- Formula -->
+      <section class="formula-card">
+        <h3>💡 BMI Formula</h3>
+
+        <p>BMI = Weight (kg) ÷ Height² (m²)</p>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
