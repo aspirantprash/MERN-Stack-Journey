@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f8ff">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">🎮 Number Guessing Game</a>
+        <span class="nav-text">Think <b>✦</b> Guess <b>✦</b> Win</span>
+    </header>
+
+    <main class="game-card">
+
+        <div class="target-icon">🎯</div>
+
+        <span class="eyebrow">Can YOU GUESS THE NUMBER</span>
+
+        <h1>Can You Guess 
+            The <span>Secret Number?</span>
+        </h1>
+
+        <p class="description">
+            Pick a number between 1 and 100.
+            Find the secret number in minimum attempts!
+        </p>
+
+        <div class="number-range">
+            <div class="range-item">
+                <span class="range-icon blue">↑</span>
+                <div>
+                    <small>Minimum</small>
+                    <strong>1</strong>
+                </div>
+            </div>
+
+            <div class="range-item">
+                <span class="range-icon purple">↓</span>
+                <div>
+                    <small>Maximum</small>
+                    <strong>100</strong>
+                </div>
+            </div>
+        </div>
+
+        <form id="guess-form">
+            <label for="guess">Enter your guess</label>
+
+            <div class="input-box">
+                <span>#</span>
+                <input
+                    type="number"
+                    id="guess"
+                    min="1"
+                    max="100"
+                    placeholder="e.g. 42"
+                    required
+                >
+            </div>
+
+            <button type="button" class="guess-btn">
+                ➤ &nbsp; Make a Guess
+            </button>
+        </form>
+
+        <div class="message" id="message" aria-live="polite">
+            💡 &nbsp; Your adventure starts here!
+        </div>
+
+        <div class="stats">
+            <div class="stat-box attempts-box">
+                <div class="stat-icon">🎯</div>
+                <div>
+                    <p>Attempts</p>
+                    <h2 id="attempts">0</h2>
+                </div>
+            </div>
+
+            <div class="stat-box hint-box">
+                <div class="stat-icon">💡</div>
+                <div>
+                    <p>Hint</p>
+                    <h2 id="hint">—</h2>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" id="reset-btn" class="reset-btn">
+            ↻ &nbsp; Restart Game
+        </button>
+
+    </main>
+
+    <footer>
+        Built by Aspirant Prashant❤️ with Code with Coffee ☕
+    </footer>
+
+</body>
+<script src="script.js"></script>
+</html>
