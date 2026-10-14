@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow – Daily Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== APP HEADER ===== -->
+  <header class="app-header">
+    <h1 class="app-title">TaskFlow</h1>
+    <p class="app-subtitle">Plan your day. Get things done.</p>
+  </header>
+
+  <!-- ===== MAIN DASHBOARD ===== -->
+  <main class="dashboard">
+
+    <!-- Today's date (placeholder for JS later) -->
+    <section class="date-section">
+      <span class="date-label">Today</span>
+      <span class="date-value" id="current-date">Loading date...</span>
+    </section>
+
+    <!-- Daily progress -->
+    <section class="progress-section">
+      <div class="progress-header">
+        <span class="progress-text">
+            Completed tasks: <strong id="completed-count">0/10</strong>
+        </span>
+        <span class="progress-percent" id="progress-percent">0%</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+    </section>
+
+    <!-- ===== TASK LIST (exactly 10 tasks) ===== -->
+    <section class="task-list">
+
+      <article class="task-item">
+        <input type="checkbox" id="task-1" class="task-checkbox">
+        <div class="task-info">
+          <label for="task-1" class="task-title">Study JavaScript fundamentals</label>
+          <span class="task-category category-learning">Learning</span>
+          <p class="task-description">Review variables, functions, and array methods.</p>
+        </div>
+      </article>
+
+      <article class="task-item">
+        <input type="checkbox" id="task-2" class="task-checkbox">
+        <div class="task-info">
+          <label for="task-2" class="task-title">Practice DOM manipulation</label>
+          <span class="task-category category-coding">Coding</span>
+          <p class="task-description">Create, update, and remove elements dynamically.</p>
+        </div>
+      </article>
+
+      <article class="task-item">
+        <input type="checkbox" id="task-3" class="task-checkbox">
+        <div class="task-info">
+          <label for="task-3" class="task-title">Build a small project</label>
+          <span class="task-category category-coding">Coding</span>
+          <p class="task-description">Start a to-do list or weather widget.</p>
+        </div>
+      </article>
+
+      <article class="task-item">
+        <input type="checkbox" id="task-4" class="task-checkbox">
+        <div class="task-info">
+          <label for="task-4" class="task-title">Revise CSS concepts</label>
+          <span class="task-category category-learning">Learning</span>
+          <p class="task-description">Flexbox, Grid, and responsive layouts.</p>
+        </div>
+      </article>
+
+      <article class="task-item">
+        <input type="checkbox" id="task-5" class="task-checkbox">
+        <div class="task-info">
+          <label for="task-5" class="task-title">Apply for jobs</label>
+          <span class="task-category category-career">Career</span>
+          <p class="task-description">Send applications to 3 companies.</p>
+        </div>
+      </article>
+
+      <article class="task-item">
+        <input type="checkbox" id="task-6" class="task-checkbox">
+        <div class="task-info">
+          <label for="task-6" class="task-title">Meditation</label>
+          <span class="task-category category-personal">Personal</span>
+          <p class="task-description">15 minutes of mindfulness breathing.</p>
+        </div>
+      </article>
+
+      <article class="task-item">
+        <input type="checkbox" id="task-7" class="task-checkbox">
+        <div class="task-info">
+          <label for="task-7" class="task-title">Running</label>
+          <span class="task-category category-personal">Personal</span>
+          <p class="task-description">30 minutes outdoor cardio session.</p>
+        </div>
+      </article>
+
+      <article class="task-item">
+        <input type="checkbox" id="task-8" class="task-checkbox">
+        <div class="task-info">
+          <label for="task-8" class="task-title">Read a tech article</label>
+          <span class="task-category category-learning">Learning</span>
+          <p class="task-description">Stay updated with web development trends.</p>
+        </div>
+      </article>
+
+      <article class="task-item">
+        <input type="checkbox" id="task-9" class="task-checkbox">
+        <div class="task-info">
+          <label for="task-9" class="task-title">Update portfolio</label>
+          <span class="task-category category-career">Career</span>
+          <p class="task-description">Add latest projects and skills.</p>
+        </div>
+      </article>
+
+      <article class="task-item">
+        <input type="checkbox" id="task-10" class="task-checkbox">
+        <div class="task-info">
+          <label for="task-10" class="task-title">Plan tomorrow</label>
+          <span class="task-category category-personal">Personal</span>
+          <p class="task-description">Set tomorrow's top priorities.</p>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- ===== ADD TASK UI (no functionality) ===== -->
+    <!-- <section class="add-task-section">
+      <input type="text" class="task-input" placeholder="Write a new task..." aria-label="New task">
+      <button class="add-btn" type="button">Add Task</button>
+    </section> -->
+
+    
+    <section class="add-task-section">
+      <input
+      type="text"
+      class="task-input"
+      id="task-input"
+      placeholder="Write a new task..."
+      aria-label="New task"
+      >
+    <button class="add-btn" id="add-btn" type="button">
+      Add Task
+    </button>
+    </section>
+
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="app-footer">
+    <p>✨ Small steps every day lead to big results. Keep going!</p>
+  </footer>
+
+</body>
+<script src="script.js"></script>
+</html>
