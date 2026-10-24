@@ -1569,3 +1569,127 @@ input:focus-visible {
     color: #9295a7;
     text-decoration: line-through;
 }
+
+/* ===== Weather App Project Preview ===== */
+
+.preview-weather {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  padding: 15px;
+  background: linear-gradient(135deg, #e3efff, #cbdfff);
+}
+
+.weather-mockup {
+  position: relative;
+  z-index: 1;
+  width: 200px;
+  padding: 10px;
+  border-radius: 11px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 10px 22px rgba(47, 83, 130, 0.14);
+  color: #253c5b;
+  font-family: "DM Sans", sans-serif;
+  transform: rotate(-3deg);
+}
+
+.weather-header,
+.weather-current {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weather-header {
+  font-size: 8px;
+  font-weight: 700;
+  color: #3d5a7c;
+}
+
+.weather-current {
+  padding: 6px 0 5px;
+}
+
+.weather-current > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  line-height: 1;
+}
+
+.weather-current strong {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.weather-current > div > span {
+  margin-top: 2px;
+  color: #7487a1;
+  font-size: 8px;
+}
+
+.weather-icon {
+  font-size: 26px;
+  line-height: 1;
+}
+
+.weather-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.weather-stats > div {
+  display: grid;
+  grid-template-columns: 14px 1fr;
+  align-items: center;
+  gap: 2px;
+  padding: 5px 6px;
+  border-radius: 6px;
+  background: #eff5ff;
+}
+
+.weather-stats > div > span {
+  grid-row: span 2;
+  font-size: 10px;
+  line-height: 1;
+}
+
+.weather-stats small {
+  font-size: 6px;
+  color: #7487a1;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  line-height: 1.1;
+}
+
+.weather-stats b {
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.weather-week {
+  display: flex;
+  justify-content: space-between;
+  gap: 3px;
+  margin-top: 7px;
+  padding-top: 6px;
+  border-top: 1px solid #e7edf6;
+}
+
+.weather-week span {
+  font-size: 6px;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #536985;
+  letter-spacing: 0.2px;
+}
+
+.preview-weather .preview-number {
+  color: rgba(49, 83, 130, 0.12);
+  font-size: 47px;
+}
