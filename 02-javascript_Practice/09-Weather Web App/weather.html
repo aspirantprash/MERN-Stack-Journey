@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Now | Weather App</title>
+
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Navbar -->
+        <header class="navbar">
+            <a href="#" class="logo">
+                <span class="sun-logo">✺</span>
+                <span>Weather Now</span>
+            </a>
+
+            <button class="units-btn">
+                ⚙ &nbsp; Celcius &nbsp;
+            </button>
+        </header>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <h1>How’s the sky looking today?</h1>
+
+            <form class="search-form">
+                <div class="search-box">
+                    <span class="search-icon">⌕</span>
+                    <input
+                        type="text"
+                        placeholder="Search for a place..."
+                        aria-label="Search for a place"
+                    >
+                </div>
+
+                <button type="submit" class="search-btn">
+                    Search
+                </button>
+            </form>
+        </section>
+
+        <!-- Main Weather Layout -->
+        <main class="weather-layout">
+
+            <div class="left-section">
+
+                <!-- Current Weather -->
+                <div class="weatherdetail">
+                    <section class="current-weather">
+
+                        <div class="weather-location">
+                            <h2>Patna, India </h2>
+                            <p>Tuesday, Oct 16 2026</p>
+                        </div>
+
+                        <div class="current-condition">
+                            <span class="current-icon">☀️</span>
+                            <span class="temperature" >25°</span>
+                        </div>
+                        <span class="decoration star-one">✳</span>
+                        <span class="decoration star-two">☀</span>
+                        <span class="decoration star-three">✳</span>
+                        <span class="decoration star-four">✳</span>
+
+                    </section>
+
+                    <!-- Weather Details -->
+                    <section class="weather-details">
+
+                        <article class="detail-card">
+                            <p>Feels Like</p>
+                            <h3 id="feel">18°</h3>
+                        </article>
+
+                        <article class="detail-card">
+                            <p>Humidity</p>
+                            <h3 id="humidity">46%</h3>
+                        </article>
+
+                        <article class="detail-card">
+                            <p>Wind</p>
+                            <h3 id="wind">14 km/h</h3>
+                        </article>
+
+                        <article class="detail-card">
+                            <p>Precipitation</p>
+                            <h3 id="perception">0 mm</h3>
+                        </article>
+
+                    </section>
+                </div>
+
+                <!-- Daily Forecast -->
+                <section class="daily-section">
+
+                    <h3 class="section-title">Daily forecast</h3>
+
+                    <div class="daily-forecast">
+
+                        <article class="day-card">
+                            <p>Tue</p>
+                            <span class="day-icon">🌧️</span>
+                            <div class="day-temperatures">
+                                <span>20°</span>
+                                <span>14°</span>
+                            </div>
+                        </article>
+
+                        <article class="day-card">
+                            <p>Wed</p>
+                            <span class="day-icon">🌧️</span>
+                            <div class="day-temperatures">
+                                <span>21°</span>
+                                <span>15°</span>
+                            </div>
+                        </article>
+
+                        <article class="day-card">
+                            <p>Thu</p>
+                            <span class="day-icon">☀️</span>
+                            <div class="day-temperatures">
+                                <span>24°</span>
+                                <span>14°</span>
+                            </div>
+                        </article>
+
+                        <article class="day-card">
+                            <p>Fri</p>
+                            <span class="day-icon">🌤️</span>
+                            <div class="day-temperatures">
+                                <span>25°</span>
+                                <span>13°</span>
+                            </div>
+                        </article>
+
+                        <article class="day-card">
+                            <p>Sat</p>
+                            <span class="day-icon">⛈️</span>
+                            <div class="day-temperatures">
+                                <span>21°</span>
+                                <span>15°</span>
+                            </div>
+                        </article>
+
+                        <article class="day-card">
+                            <p>Sun</p>
+                            <span class="day-icon">🌧️</span>
+                            <div class="day-temperatures">
+                                <span>25°</span>
+                                <span>16°</span>
+                            </div>
+                        </article>
+
+                        <article class="day-card">
+                            <p>Mon</p>
+                            <span class="day-icon">🌤️</span>
+                            <div class="day-temperatures">
+                                <span>24°</span>
+                                <span>15°</span>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+            </div>
+
+    
+
+        </main>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
