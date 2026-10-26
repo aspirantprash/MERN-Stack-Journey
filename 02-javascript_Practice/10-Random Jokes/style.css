@@ -1,0 +1,528 @@
+
+/* =========================   1. RESET & VARIABLES ========================= */
+
+:root {
+    --background: #fff9f0;
+    --surface: #ffffff;
+    --text: #29251f;
+    --muted: #81796e;
+    --yellow: #ffd166;
+    --yellow-dark: #f2b93f;
+    --orange: #ed7655;
+    --border: #eee5d9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: var(--background);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font: inherit;
+}
+
+/* ========================= 2. PAGE LAYOUT ========================= */
+
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 8%;
+    overflow: hidden;
+    position: relative;
+}
+
+.page-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #ffe8bd;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.45;
+    top: 180px;
+    left: -200px;
+    pointer-events: none;
+}
+
+.page-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: #ffd9cc;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: 0.35;
+    bottom: 80px;
+    right: -150px;
+    pointer-events: none;
+}
+
+/* =========================  3. NAVBAR ========================= */
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Outfit", sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.logo-icon {
+    font-size: 30px;
+}
+
+.dot {
+    color: var(--orange);
+}
+
+.nav-tag {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--muted);
+    border: 1px solid #e9dfd1;
+    padding: 10px 14px;
+    border-radius: 50px;
+}
+
+/* =========================   4. MAIN CONTENT ========================= */
+
+.main-content {
+    flex: 1;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px 0 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--orange);
+    background: #fff0e8;
+    padding: 9px 15px;
+    border-radius: 50px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    margin-bottom: 23px;
+}
+
+.label-dot {
+    width: 7px;
+    height: 7px;
+    background: var(--orange);
+    border-radius: 50%;
+}
+
+h1 {
+    font-family: "Outfit", sans-serif;
+    /* font-size: clamp(42px, 6vw, 68px); */
+    font-size: clamp(42px, 5.5vw, 68px);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -2.5px;
+}
+
+h1 span {
+    color: var(--orange);
+    position: relative;
+}
+
+h1 span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    height: 8px;
+    background: var(--yellow);
+    opacity: 0.65;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.hero-description {
+    max-width: 430px;
+    margin: 19px auto 34px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* ========================   5. JOKE CARD ========================= */
+
+.joke-card {
+    width: 100%;
+    max-width: 510px;
+    background: var(--surface);
+    padding: 25px 30px 27px;
+    border: 1px solid #f0e7db;
+    border-radius: 25px;
+    box-shadow:
+        0 15px 45px rgba(83, 63, 34, 0.06),
+        0 3px 10px rgba(83, 63, 34, 0.025);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.joke-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 22px 55px rgba(83, 63, 34, 0.1);
+}
+
+.card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.joke-category {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    color: var(--muted);
+}
+
+.joke-category span {
+    font-size: 16px;
+}
+
+.joke-number {
+    color: #a39a8e;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* Illustration */
+
+.joke-illustration {
+    height: 145px;
+    background: #fff8e9;
+    border: 1px solid #fff0d0;
+    border-radius: 18px;
+    margin: 23px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.joke-illustration::before {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    background: var(--yellow);
+    border-radius: 50%;
+    opacity: 0.55;
+}
+
+.smile-face {
+    position: relative;
+    font-size: 76px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.spark {
+    position: absolute;
+    color: var(--orange);
+    font-size: 27px;
+}
+
+.spark-one {
+    top: 24px;
+    left: 24%;
+}
+
+.spark-two {
+    top: 30px;
+    right: 25%;
+    font-size: 33px;
+    color: var(--yellow-dark);
+}
+
+.spark-three {
+    bottom: 20px;
+    right: 30%;
+    font-size: 20px;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(-4deg);
+    }
+
+    50% {
+        transform: translateY(-7px) rotate(4deg);
+    }
+}
+
+/* Joke text */
+
+.joke-content {
+    padding: 0 5px 20px;
+}
+
+.joke-content h2 {
+    font-family: "Outfit", sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.45;
+    letter-spacing: -0.5px;
+}
+
+.joke-content p {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-top: 12px;
+}
+
+/* Divider */
+
+.card-divider {
+    border-top: 1px dashed #e9dfd1;
+    margin-bottom: 21px;
+}
+
+/* =========================   6. BUTTOM ========================= */
+
+.joke-button {
+    width: 100%;
+    min-height: 54px;
+    border: none;
+    border-radius: 13px;
+    background: var(--yellow);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.25s ease,
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.joke-button span {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.joke-button:hover {
+    background: var(--yellow-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 7px 18px rgba(242, 185, 63, 0.25);
+}
+
+.joke-button:active {
+    transform: scale(0.98);
+}
+
+.joke-button:focus-visible {
+    outline: 3px solid var(--orange);
+    outline-offset: 4px;
+}
+
+.button-hint {
+    color: #a49a8d;
+    font-size: 11px;
+    margin-top: 15px;
+}
+
+/* =========================   7. BOTTOM INFO ========================= */
+
+.bottom-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 29px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.info-icon {
+    font-size: 15px;
+}
+
+.info-separator {
+    color: #d6c7b4;
+}
+
+/* =========================   8. FOOTER ========================= */
+
+.footer {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 65px;
+    margin: 0 auto;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: var(--muted);
+    font-size: 11px;
+    position: relative;
+    z-index: 1;
+}
+
+.footer span {
+    color: var(--orange);
+}
+
+/* =========================
+   9. RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 600px) {
+    .page-wrapper {
+        padding: 0 20px;
+    }
+
+    .navbar {
+        min-height: 75px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .logo-icon {
+        font-size: 26px;
+    }
+
+    .nav-tag {
+        font-size: 8px;
+        letter-spacing: 0.8px;
+        padding: 8px 9px;
+    }
+
+    .main-content {
+        padding: 48px 0 35px;
+    }
+
+    h1 {
+        font-size: clamp(39px, 10vw, 53px);
+        letter-spacing: -1.8px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+        margin: 17px auto 27px;
+        max-width: 330px;
+    }
+
+    .joke-card {
+        padding: 19px 17px 22px;
+        border-radius: 20px;
+    }
+
+    .joke-illustration {
+        height: 125px;
+        margin: 20px 0;
+    }
+
+    .smile-face {
+        font-size: 65px;
+    }
+
+    .joke-content h2 {
+        font-size: 20px;
+    }
+
+    .joke-content p {
+        font-size: 14px;
+    }
+
+    .joke-button {
+        min-height: 51px;
+        font-size: 13px;
+    }
+
+    .bottom-info {
+        gap: 10px;
+        margin-top: 25px;
+    }
+
+    .info-item {
+        font-size: 11px;
+    }
+
+    .footer {
+        padding: 18px 0;
+        min-height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
