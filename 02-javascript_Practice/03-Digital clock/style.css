@@ -1,13 +1,13 @@
 :root {
-    --bg-1: #0f172a;
-    --bg-2: #1e293b;
-    --card: rgba(15, 23, 42, 0.72);
-    --card-border: rgba(148, 163, 184, 0.25);
-    --primary: #38bdf8;
-    --secondary: #a78bfa;
-    --text: #e2e8f0;
-    --muted: #94a3b8;
-    --shadow: rgba(15, 23, 42, 0.55);
+    --bg-1: #9dafda;
+    --bg-2: #f3e8ff;
+    --card: rgba(255, 255, 255, 0.65);
+    --card-border: rgba(148, 163, 184, 0.35);
+    --primary: #4d6571;
+    --secondary: #9579c4;
+    --text: #1e293b;
+    --muted: #64748b;
+    --shadow: rgba(56, 61, 67, 0.25);
 }
 
 * {
@@ -41,6 +41,7 @@ body {
     padding: 28px 24px;
     box-shadow: 0 20px 50px var(--shadow);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .tagline {
@@ -50,6 +51,7 @@ body {
     color: var(--primary);
     margin-bottom: 8px;
     text-align: center;
+    font-weight: 600;
 }
 
 h1 {
@@ -57,19 +59,21 @@ h1 {
     font-size: clamp(2rem, 4vw, 2.6rem);
     margin-bottom: 22px;
     font-weight: 700;
+    color: var(--text);
 }
 
 .display-panel {
     position: relative;
     min-height: 140px;
     border-radius: 18px;
-    background: rgba(15, 23, 42, 0.7);
-    border: 1px solid rgba(148, 163, 184, 0.2);
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid var(--primary);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     margin-bottom: 20px;
+    box-shadow: inset 0 2px 10px rgba(148, 163, 184, 0.15);
 }
 
 .display {
@@ -96,37 +100,60 @@ h1 {
     color: var(--text);
 }
 
+#time {
+    color: var(--primary);
+    text-shadow: 0 0 1px rgba(2, 132, 199, 0.3);
+}
+
+#date {
+    color: var(--primary);
+}
+
 .button-group {
     display: flex;
-    gap: 12px;
     justify-content: center;
+    gap: 14px;
     flex-wrap: wrap;
 }
 
 button {
-    border: none;
-    border-radius: 12px;
-    padding: 12px 18px;
-    font-size: 0.96rem;
+    padding: 13px 26px;
+    border-radius: 10px;
+    font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+    transition: all 0.3s ease;
 }
 
-button:hover {
+/* Show Time */
+.primary-btn {
+    background: transparent;
+    color: #5D83A6;
+    border: 1.5px solid #4a637b;
+}
+
+.primary-btn:hover {
+    background: #4A7095;
+    color: #F4F6FC;
     transform: translateY(-2px);
 }
 
-.primary-btn {
-    background: linear-gradient(135deg,  #0ea5e9);
-    color: #031821;
-    box-shadow: 0 8px 20px rgba(56, 191, 248, 0.358);
+/* Show Date */
+.secondary-btn {
+    background: transparent;
+    color: #5D83A6;
+    border: 1.5px solid #4a637b;
 }
 
-.secondary-btn {
-    background: linear-gradient(135deg,  #0ea5e9);
-    color: #031821;
-    box-shadow: 0 8px 20px rgba(56, 191, 248, 0.358);
+.secondary-btn:hover {
+    background: #5D83A6;
+    color: #F4F6FC;
+    transform: translateY(-2px);
+}
+
+/* Click */
+button:active {
+    transform: scale(0.97);
 }
 
 @media (max-width: 480px) {
