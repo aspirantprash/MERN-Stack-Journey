@@ -4,7 +4,8 @@ body{
     box-sizing: border-box;
     font-family: "DM Sans", sans-serif;
 
-    background: rgb(151, 183, 194)
+    /* background: #f8f4ef; */
+    background: #f5f4f3fb;
 }
 
 
@@ -18,40 +19,64 @@ body{
 }
 
 .calculator{
-    background: #192b40;
+    background: #ffd9ef;
     padding: 20px;
     border-radius: 10px;
+    border: 1.4px solid #262724;
 
 }
 
 #brand{
-    background-color: #192b40;
+    background-color: #f8f4ef;;
     text-align: center;
-    color: #3c5151;
+    color: #ebeae7;
     font-size: 20px;
     margin-bottom: 10px;
 }
+.calculator form .input input{
+    border: 0;
+    outline: 0;
+    width: 70px;
+    height:50px;
+    border-radius: 10px;
+    border: 1px solid #262724;
+    box-shadow: -5px -5px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #2d2929;
+    cursor: pointer;
+    margin: 10px;
+    background: rgb(222, 223, 220);
+}
+
+
+
+
 .calculator form input{
     border: 0;
     outline: 0;
-    width: 50px;
-    height:50px;
+    width: 70px;
+    height:70px;
     border-radius: 10px;
     box-shadow: -5px -5px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.2);
     background: transparent;
     font-size: 20px;
-    color: #192b40;
+    color: #2d2929;
     cursor: pointer;
     margin: 10px;
-    background: rgb(151, 183, 194);
 }
+
+
+
+
+
 
 form .operator{
     font-weight: bold;
 }
 
 .mybtn{
-    width: 122px;
+    width: 250px;
     background: rgb(151, 183, 194);
     color: #192b40;
     font-weight: bold;
@@ -61,8 +86,8 @@ form .display{
     display: flex;
     justify-content: flex-end;
     margin: 0px 0;
-    color: #222e3b;
-    border-radius: 2px;
+    /* color: #aeb0b2;
+    border-radius: 2px; */
     
 }
 
@@ -74,16 +99,16 @@ form .display input{
 }
 
 form input#btnequal{
-    width: 122px;
+    width: 163.5px;
 }
 
 form input.operator{
-
+    
     color: #293b38;
 }
 
 #futr{
     text-align: center;
-    color:  rgb(151, 183, 194);
-    margin-top: 5px;
+    color:  rgb(214, 213, 203);
+    margin-top: 2px;
 }
