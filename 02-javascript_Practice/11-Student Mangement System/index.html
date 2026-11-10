@@ -1,0 +1,923 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Campusly | College Management</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="app-container">
+      <!-- ================= SIDEBAR ================= -->
+
+      <aside class="sidebar">
+        <div class="logo">
+          <div class="logo-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+
+          <h2>Campusly<span>.</span></h2>
+        </div>
+
+        <div class="sidebar-label">MAIN MENU</div>
+
+        <nav class="navigation">
+          <a href="#dashboard" class="nav-link active">
+            <i class="fa-solid fa-house"></i>
+            <span>Dashboard</span>
+          </a>
+
+          <a href="#courses" class="nav-link">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Courses</span>
+          </a>
+
+          <a href="#timetable" class="nav-link">
+            <i class="fa-regular fa-calendar-days"></i>
+            <span>Time Table</span>
+          </a>
+
+          <a href="#students" class="nav-link">
+            <i class="fa-solid fa-users"></i>
+            <span>Students</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <div class="help-card">
+            <div class="help-icon">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+
+            <h4>Need some help?</h4>
+            <p>Contact support for any assistance.</p>
+
+            <button class="help-btn">Get Support</button>
+          </div>
+
+          <div class="profile">
+            <div class="profile-avatar">A</div>
+
+            <div class="profile-info">
+              <h4>Admin Panel</h4>
+              <p>Administrator</p>
+            </div>
+
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ================= MAIN CONTENT ================= -->
+
+      <main class="main-content">
+        <!-- TOP HEADER -->
+
+        <header class="topbar">
+          <div class="welcome-text">
+            <h1>Good morning, Admin! <span>👋</span></h1>
+            <p>Here's what's happening at your college today.</p>
+          </div>
+
+          <div class="topbar-right">
+            <div class="search-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="Search anything..." />
+            </div>
+
+            <button class="notification-btn">
+              <i class="fa-regular fa-bell"></i>
+              <span class="notification-dot"></span>
+            </button>
+
+            <div class="top-avatar">A</div>
+          </div>
+        </header>
+
+        <!-- ================= DASHBOARD ================= -->
+
+        <section id="dashboard" class="page-section active">
+          <div class="section-heading">
+            <div>
+              <h2>Dashboard Overview</h2>
+              <p>Your college at a glance</p>
+            </div>
+
+            <button class="date-btn">
+              <i class="fa-regular fa-calendar"></i>
+              Academic Year 2026-27
+            </button>
+          </div>
+
+          <!-- STATS CARDS -->
+
+          <div class="stats-grid">
+            <div class="stat-card lavender">
+              <div class="stat-top">
+                <div class="stat-icon purple">
+                  <i class="fa-solid fa-user-graduate"></i>
+                </div>
+
+                <span class="stat-tag">Students</span>
+              </div>
+
+              <h2 id="total-students">2,450</h2>
+              <p>Total enrolled students</p>
+
+              <div class="stat-bottom">
+                <span class="stat-change">
+                  <i class="fa-solid fa-arrow-up"></i>
+                  12.5%
+                </span>
+                <span>vs last year</span>
+              </div>
+            </div>
+
+            <div class="stat-card mint">
+              <div class="stat-top">
+                <div class="stat-icon green">
+                  <i class="fa-solid fa-chalkboard-user"></i>
+                </div>
+
+                <span class="stat-tag">Faculty</span>
+              </div>
+
+              <h2>128</h2>
+              <p>Total teaching staff</p>
+
+              <div class="stat-bottom">
+                <span class="stat-change">
+                  <i class="fa-solid fa-arrow-up"></i>
+                  4.8%
+                </span>
+                <span>vs last year</span>
+              </div>
+            </div>
+
+            <div class="stat-card peach">
+              <div class="stat-top">
+                <div class="stat-icon orange">
+                  <i class="fa-solid fa-book"></i>
+                </div>
+
+                <span class="stat-tag">Courses</span>
+              </div>
+
+              <h2>05</h2>
+              <p>Active degree programs</p>
+
+              <div class="stat-bottom">
+                <span class="stat-change neutral">
+                  <i class="fa-solid fa-minus"></i>
+                  0%
+                </span>
+                <span>vs last year</span>
+              </div>
+            </div>
+
+            <div class="stat-card sky">
+              <div class="stat-top">
+                <div class="stat-icon blue">
+                  <i class="fa-solid fa-building"></i>
+                </div>
+
+                <span class="stat-tag">Departments</span>
+              </div>
+
+              <h2>08</h2>
+              <p>Academic departments</p>
+
+              <div class="stat-bottom">
+                <span class="stat-change">
+                  <i class="fa-solid fa-arrow-up"></i>
+                  2 new
+                </span>
+                <span>this academic year</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- DASHBOARD LOWER GRID -->
+
+          <div class="dashboard-grid">
+            <!-- COURSE OVERVIEW -->
+
+            <div class="content-card course-overview">
+              <div class="card-heading">
+                <div>
+                  <h3>Course Overview</h3>
+                  <p>Students across all programs</p>
+                </div>
+
+                <button class="more-btn">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </button>
+              </div>
+
+              <div class="course-list">
+                <div class="course-row">
+                  <div class="course-symbol bca-symbol">B</div>
+
+                  <div class="course-details">
+                    <h4>BCA</h4>
+                    <p>Bachelor of Computer Applications</p>
+                  </div>
+
+                  <div class="course-count">
+                    <h4 class="bca-students">680</h4>
+                    <span>Students</span>
+                  </div>
+
+                  <div class="progress-bar">
+                    <div class="progress purple-progress"></div>
+                  </div>
+                </div>
+
+                <div class="course-row">
+                  <div class="course-symbol btech-symbol">T</div>
+
+                  <div class="course-details">
+                    <h4>B.Tech</h4>
+                    <p>Bachelor of Technology</p>
+                  </div>
+
+                  <div class="course-count">
+                    <h4 id="btech-students">750</h4>
+                    <span>Students</span>
+                  </div>
+
+                  <div class="progress-bar">
+                    <div class="progress orange-progress"></div>
+                  </div>
+                </div>
+
+                <div class="course-row">
+                  <div class="course-symbol bsc-symbol">S</div>
+
+                  <div class="course-details">
+                    <h4>B.Sc IT</h4>
+                    <p>Bachelor of Science in IT</p>
+                  </div>
+
+                  <div class="course-count">
+                    <h4 id="bsc-students">420</h4>
+                    <span>Students</span>
+                  </div>
+
+                  <div class="progress-bar">
+                    <div class="progress green-progress"></div>
+                  </div>
+                </div>
+
+                <div class="course-row">
+                  <div class="course-symbol mca-symbol">M</div>
+
+                  <div class="course-details">
+                    <h4>MCA</h4>
+                    <p>Master of Computer Applications</p>
+                  </div>
+
+                  <div class="course-count">
+                    <h4 id="mca-students">350</h4>
+                    <span>Students</span>
+                  </div>
+
+                  <div class="progress-bar">
+                    <div class="progress blue-progress"></div>
+                  </div>
+                </div>
+
+                <div class="course-row">
+                  <div class="course-symbol mtech-symbol">E</div>
+
+                  <div class="course-details">
+                    <h4>M.Tech</h4>
+                    <p>Master of Technology</p>
+                  </div>
+
+                  <div class="course-count">
+                    <h4 id="mtech-students">250</h4>
+                    <span>Students</span>
+                  </div>
+
+                  <div class="progress-bar">
+                    <div class="progress pink-progress"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- QUICK INFORMATION -->
+
+            <div class="content-card quick-info">
+              <div class="card-heading">
+                <div>
+                  <h3>Quick Information</h3>
+                  <p>Campus updates & reminders</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon lavender-icon">
+                  <i class="fa-solid fa-user-plus"></i>
+                </div>
+
+                <div>
+                  <h4>New Admissions</h4>
+                  <p>Registration is open for 2026-27</p>
+                </div>
+
+                <span class="info-badge purple-badge">Open</span>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon mint-icon">
+                  <i class="fa-solid fa-calendar-check"></i>
+                </div>
+
+                <div>
+                  <h4>Semester Exams</h4>
+                  <p>Examination schedule released</p>
+                </div>
+
+                <span class="info-badge green-badge">Updated</span>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon peach-icon">
+                  <i class="fa-solid fa-bullhorn"></i>
+                </div>
+
+                <div>
+                  <h4>College Notice</h4>
+                  <p>Upcoming annual cultural fest</p>
+                </div>
+
+                <span class="info-badge orange-badge">New</span>
+              </div>
+
+              <div class="info-banner">
+                <div class="banner-icon">
+                  <i class="fa-solid fa-sparkles"></i>
+                </div>
+
+                <div>
+                  <h4>Everything looks great!</h4>
+                  <p>Your campus is running smoothly today.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= COURSES ================= -->
+
+        <section id="courses" class="page-section">
+          <div class="section-heading">
+            <div>
+              <h2>Our Courses</h2>
+              <p>Explore all academic programs offered by the college</p>
+            </div>
+          </div>
+
+          <div class="all-courses-grid">
+            <div class="course-card course-purple">
+              <div class="big-course-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+
+              <span class="course-label">UNDERGRADUATE</span>
+
+              <h3 id="courseName">BCA</h3>
+              <p>Bachelor of Computer Applications</p>
+
+              <div class="course-meta">
+                <span><i class="fa-regular fa-clock"></i> 3 Years</span>
+                <span>
+                    <i class="fa-solid fa-users"></i>
+                  <b id="max-stud">740</b>Students</span>
+              </div>
+
+              <button class="course-action" data-course="BCA">
+                View Course <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+
+            <div class="course-card course-orange">
+              <div class="big-course-icon">
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+
+              <span class="course-label">UNDERGRADUATE</span>
+
+              <h3 id="courseName">B.Tech</h3>
+              <p>Bachelor of Technology</p>
+
+              <div class="course-meta">
+                <span><i class="fa-regular fa-clock"></i> 4 Years</span>
+                <span id="allStudents">
+                    <i class="fa-solid fa-users"></i>
+                    <b id="max-stud">740</b>Students</span>
+              </div>
+
+              <button class="course-action" data-course="B.Tech">
+                View Course <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+
+            <div class="course-card course-green">
+              <div class="big-course-icon">
+                <i class="fa-solid fa-database"></i>
+              </div>
+
+              <span class="course-label">UNDERGRADUATE</span>
+
+              <h3 id="courseName">B.Sc IT</h3>
+              <p>Bachelor of Science in Information Technology</p>
+
+              <div class="course-meta">
+                <span><i class="fa-regular fa-clock"></i> 3 Years</span>
+                <span id="allStudents"
+                  ><i class="fa-solid fa-users"></i>
+                   <b id="max-stud">740</b> Students</span
+                >
+              </div>
+
+              <button class="course-action" data-course="B.Sc IT">
+                View Course <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+
+            <div class="course-card course-blue">
+              <div class="big-course-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+
+              <span class="course-label">POSTGRADUATE</span>
+
+              <h3 id="courseName">MCA</h3>
+              <p>Master of Computer Applications</p>
+
+              <div class="course-meta">
+                <span><i class="fa-regular fa-clock"></i> 2 Years</span>
+                <span id="allStudents"
+                  ><i class="fa-solid fa-users"></i>
+                   <b id="max-stud">740</b> Students</span
+                >
+              </div>
+
+              <button class="course-action" data-course="MCA">
+                View Course <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+
+            <div class="course-card course-pink">
+              <div class="big-course-icon">
+                <i class="fa-solid fa-gears"></i>
+              </div>
+
+              <span class="course-label">POSTGRADUATE</span>
+
+              <h3 id="courseName">M.Tech</h3>
+              <p>Master of Technology</p>
+
+              <div class="course-meta">
+                <span><i class="fa-regular fa-clock"></i> 2 Years</span>
+                <span id="allStudents"
+                  ><i class="fa-solid fa-users"></i>
+                   <b id="max-stud">740</b> Students</span
+                >
+              </div>
+
+              <button class="course-action" data-course="M.Tech">
+                View Course <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= TIME TABLE ================= -->
+
+        <section id="timetable" class="page-section">
+          <div class="section-heading">
+            <div>
+              <h2>Class Time Table</h2>
+              <p>Weekly academic schedule for all courses</p>
+            </div>
+
+            <button class="date-btn">
+              <i class="fa-solid fa-download"></i>
+              Download Schedule
+            </button>
+          </div>
+
+          <div class="content-card timetable-card">
+            <div class="timetable-toolbar">
+              <div class="filter-group">
+                <label>Select Course</label>
+
+                <select>
+                  <option>BCA</option>
+                  <option>B.Tech</option>
+                  <option>B.Sc IT</option>
+                  <option>MCA</option>
+                  <option>M.Tech</option>
+                </select>
+              </div>
+
+              <div class="filter-group">
+                <label>Select Semester</label>
+
+                <select>
+                  <option>Semester 1</option>
+                  <option>Semester 2</option>
+                  <option>Semester 3</option>
+                  <option>Semester 4</option>
+                  <option>Semester 5</option>
+                  <option>Semester 6</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="table-wrapper">
+              <table class="timetable">
+                <thead>
+                  <tr>
+                    <th>TIME</th>
+                    <th>MONDAY</th>
+                    <th>TUESDAY</th>
+                    <th>WEDNESDAY</th>
+                    <th>THURSDAY</th>
+                    <th>FRIDAY</th>
+                    <th>SATURDAY</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>09:00 - 10:00</td>
+                    <td>
+                      <div class="subject purple-subject">
+                        Programming<br /><small>Room 101</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject blue-subject">
+                        Mathematics<br /><small>Room 102</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject green-subject">
+                        DBMS<br /><small>Room 103</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject orange-subject">
+                        Networking<br /><small>Room 104</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject pink-subject">
+                        Web Design<br /><small>Room 101</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject blue-subject">
+                        Lab<br /><small>Computer Lab 1</small>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>10:00 - 11:00</td>
+                    <td>
+                      <div class="subject green-subject">
+                        DBMS<br /><small>Room 103</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject orange-subject">
+                        Programming<br /><small>Room 101</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject purple-subject">
+                        Mathematics<br /><small>Room 102</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject pink-subject">
+                        Web Design<br /><small>Room 101</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject blue-subject">
+                        Networking<br /><small>Room 104</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject green-subject">
+                        Lab<br /><small>Computer Lab 1</small>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="break-row">
+                    <td>11:00 - 11:30</td>
+                    <td colspan="6">☕ SHORT BREAK</td>
+                  </tr>
+
+                  <tr>
+                    <td>11:30 - 12:30</td>
+                    <td>
+                      <div class="subject orange-subject">
+                        Mathematics<br /><small>Room 102</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject pink-subject">
+                        Networking<br /><small>Room 104</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject blue-subject">
+                        Programming<br /><small>Room 101</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject green-subject">
+                        DBMS<br /><small>Room 103</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject purple-subject">
+                        Mathematics<br /><small>Room 102</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject orange-subject">
+                        Workshop<br /><small>Room 105</small>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>12:30 - 01:30</td>
+                    <td>
+                      <div class="subject pink-subject">
+                        Web Design<br /><small>Room 101</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject green-subject">
+                        DBMS<br /><small>Room 103</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject orange-subject">
+                        Networking<br /><small>Room 104</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject blue-subject">
+                        Programming<br /><small>Room 101</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject green-subject">
+                        Lab<br /><small>Computer Lab 1</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject pink-subject">
+                        Seminar<br /><small>Room 105</small>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="break-row">
+                    <td>01:30 - 02:00</td>
+                    <td colspan="6">🍱 LUNCH BREAK</td>
+                  </tr>
+
+                  <tr>
+                    <td>02:00 - 03:00</td>
+                    <td>
+                      <div class="subject blue-subject">
+                        Lab<br /><small>Computer Lab 1</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject purple-subject">
+                        Workshop<br /><small>Room 105</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject pink-subject">
+                        Web Design<br /><small>Room 101</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject green-subject">
+                        Lab<br /><small>Computer Lab 2</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject orange-subject">
+                        Project Work<br /><small>Room 105</small>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subject purple-subject">
+                        Library<br /><small>Central Library</small>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= STUDENTS ================= -->
+
+        <section id="students" class="page-section">
+          <div class="section-heading">
+            <div>
+              <h2>Student Management</h2>
+              <p>Manage student records across all academic programs</p>
+            </div>
+            <a class="date-btn" href="login.html?next=admin-students.html">All Student Details (Admin)</a>
+          </div>
+
+          <!-- TOTAL STUDENTS -->
+
+          <div class="total-students-card">
+            <div class="total-students-info">
+              <div class="total-icon">
+                <i class="fa-solid fa-users"></i>
+              </div>
+
+              <div>
+                <p>Total College Students</p>
+                <h2 id="total-students">2,450 <span>Students</span></h2>
+              </div>
+            </div>
+
+            <div class="total-students-note">
+              <i class="fa-solid fa-circle-check"></i>
+              Across all 5 courses
+            </div>
+          </div>
+
+          <!-- COURSE STUDENTS -->
+
+          <div class="student-courses-grid">
+            <div class="student-course-card lavender-card">
+              <div class="student-course-top">
+                <div class="student-course-icon purple">
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+
+                <span class="course-label">UNDERGRADUATE</span>
+              </div>
+
+              <h3>BCA</h3>
+              <p>Bachelor of Computer Applications</p>
+
+              <div class="student-number">
+                <h2 class="bca-students">680</h2>
+                <span>Enrolled Students</span>
+              </div>
+
+              <button class="add-student-btn purple-btn" data-course="BCA">
+                <i class="fa-solid fa-plus"></i>
+                Add Students
+              </button>
+            </div>
+
+            <div class="student-course-card peach-card">
+              <div class="student-course-top">
+                <div class="student-course-icon orange">
+                  <i class="fa-solid fa-microchip"></i>
+                </div>
+
+                <span class="course-label">UNDERGRADUATE</span>
+              </div>
+
+              <h3>B.Tech</h3>
+              <p>Bachelor of Technology</p>
+
+              <div class="student-number">
+                <h2 id="btech-students">750</h2>
+                <span>Enrolled Students</span>
+              </div>
+
+              <button class="add-student-btn orange-btn" data-course="B.Tech">
+                <i class="fa-solid fa-plus"></i>
+                Add Students
+              </button>
+            </div>
+
+            <div class="student-course-card mint-card">
+              <div class="student-course-top">
+                <div class="student-course-icon green">
+                  <i class="fa-solid fa-database"></i>
+                </div>
+
+                <span class="course-label">UNDERGRADUATE</span>
+              </div>
+
+              <h3>B.Sc IT</h3>
+              <p>Bachelor of Science in IT</p>
+
+              <div class="student-number">
+                <h2 id="bsc-students">420</h2>
+                <span>Enrolled Students</span>
+              </div>
+
+              <button class="add-student-btn green-btn" data-course="B.Sc IT">
+                <i class="fa-solid fa-plus"></i>
+                Add Students
+              </button>
+            </div>
+
+            <div class="student-course-card sky-card">
+              <div class="student-course-top">
+                <div class="student-course-icon blue">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+
+                <span class="course-label">POSTGRADUATE</span>
+              </div>
+
+              <h3>MCA</h3>
+              <p>Master of Computer Applications</p>
+
+              <div class="student-number">
+                <h2 id="mca-students">350</h2>
+                <span>Enrolled Students</span>
+              </div>
+
+              <button class="add-student-btn blue-btn" data-course="MCA">
+                <i class="fa-solid fa-plus"></i>
+                Add Students
+              </button>
+            </div>
+
+            <div class="student-course-card pink-card">
+              <div class="student-course-top">
+                <div class="student-course-icon pink">
+                  <i class="fa-solid fa-gears"></i>
+                </div>
+
+                <span class="course-label">POSTGRADUATE</span>
+              </div>
+
+              <h3>M.Tech</h3>
+              <p>Master of Technology</p>
+
+              <div class="student-number">
+                <h2 id="mtech-students">250</h2>
+                <span>Enrolled Students</span>
+              </div>
+
+              <button class="add-student-btn pink-btn" data-course="M.Tech">
+                <i class="fa-solid fa-plus"></i>
+                Add Students
+              </button>
+            </div>
+          </div>
+
+          <!-- FOOTER -->
+
+          <footer class="footer">
+            <p>© 2026 Campusly. College Management System.</p>
+
+            <p>Made with <span>♥</span> for education</p>
+          </footer>
+        </section>
+      </main>
+    </div>
+  </body>
+  <script src="appbroh.js"></script>
+</html>
