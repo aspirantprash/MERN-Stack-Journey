@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Student Details | Campusly Admin</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f8f7fc;
+      --surface: #ffffff;
+      --text: #28243c;
+      --muted: #77748b;
+      --purple: #7665dc;
+      --purple-light: #eeeaff;
+      --border: #e9e7f0;
+      --danger: #b42318;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 28px;
+      visibility: hidden;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "DM Sans", "Segoe UI", sans-serif;
+    }
+
+    .page {
+      width: min(1440px, 100%);
+      margin: 0 auto;
+    }
+
+    .topbar,
+    .heading,
+    .table-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .topbar {
+      margin-bottom: 32px;
+    }
+
+    .brand {
+      font-size: 24px;
+      font-weight: 800;
+    }
+
+    .brand span {
+      color: var(--purple);
+    }
+
+    a {
+      color: var(--purple);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .card {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: var(--surface);
+      box-shadow: 0 16px 40px rgba(40, 36, 60, 0.06);
+    }
+
+    .heading {
+      padding: 26px 28px 20px;
+    }
+
+    .eyebrow {
+      margin: 0 0 6px;
+      color: var(--purple);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .subheading {
+      margin: 8px 0 0;
+      color: var(--muted);
+    }
+
+    .table-toolbar {
+      padding: 0 28px 20px;
+    }
+
+    .student-count {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .student-count strong {
+      color: var(--text);
+    }
+
+    #student-search {
+      width: min(320px, 100%);
+      padding: 11px 13px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--text);
+      font: inherit;
+    }
+
+    #student-search:focus {
+      border-color: var(--purple);
+      outline: 3px solid var(--purple-light);
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border-top: 1px solid var(--border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      white-space: nowrap;
+    }
+
+    th,
+    td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      font-size: 14px;
+    }
+
+    th {
+      background: #faf9fd;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    tbody tr:hover {
+      background: #fcfbff;
+    }
+
+    .empty-state,
+    .error-state {
+      padding: 32px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .error-state {
+      color: var(--danger);
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 16px;
+      }
+
+      .heading,
+      .table-toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .heading {
+        padding: 22px 18px 16px;
+      }
+
+      .table-toolbar {
+        padding: 0 18px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <div class="brand">Campus<span>ly</span> Admin</div>
+      <a href="index.html">Back to dashboard</a>
+    </header>
+
+    <section class="card" aria-labelledby="page-title">
+      <div class="heading">
+        <div>
+          <p class="eyebrow">Admin panel</p>
+          <h1 id="page-title">All Student Details</h1>
+          <p class="subheading">Student records saved in this browser.</p>
+        </div>
+      </div>
+
+      <div class="table-toolbar">
+        <div class="student-count">Total students: <strong id="student-count">0</strong></div>
+        <input id="student-search" type="search" placeholder="Search students..." aria-label="Search students">
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Roll Number</th>
+              <th scope="col">Email</th>
+              <th scope="col">Phone</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Course</th>
+              <th scope="col">Academic Year</th>
+              <th scope="col">Semester</th>
+            </tr>
+          </thead>
+          <tbody id="student-table-body"></tbody>
+        </table>
+        <div id="table-message" class="empty-state" role="status" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+  <script src="admin-students.js"></script>
+</body>
+</html>
