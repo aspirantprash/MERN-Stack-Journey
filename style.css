@@ -1728,3 +1728,67 @@ input:focus-visible {
   color: rgba(120, 60, 140, 0.1);
   font-size: 47px;
 }
+
+
+/* STUDENT MANAGEMENT SYSTEM */
+
+.preview-students {
+  background: linear-gradient(135deg, #dceaff, #e9e2ff);
+}
+
+.students-mockup {
+  position: relative;
+  z-index: 1;
+  width: 70%;
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 12px 25px rgba(50, 50, 100, 0.12);
+  transform: rotate(-2deg);
+}
+
+.students-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12px;
+}
+
+.students-stats {
+  display: flex;
+  gap: 10px;
+  margin-top: 13px;
+}
+
+.students-stats div {
+  flex: 1;
+  padding: 9px;
+  border-radius: 7px;
+  background: #f0efff;
+  display: flex;
+  flex-direction: column;
+}
+
+.students-stats strong {
+  color: #6558e8;
+  font-size: 17px;
+}
+
+.students-stats small {
+  color: #73788c;
+  font-size: 9px;
+}
+
+.students-row {
+  height: 6px;
+  width: 90%;
+  margin-top: 10px;
+  border-radius: 5px;
+  background: #e2e3f0;
+}
+
+.students-row.short {
+  width: 60%;
+  margin-top: 6px;
+}

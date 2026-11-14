@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8f4ef" />
+    <meta
+      name="description"
+      content="Prashant Sharma — BCA graduate and aspiring MERN Stack Developer building creative web experiences."
+    />
+    <title>Prashant Sharma — Aspiring MERN Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page-frame">
+      <header class="site-header" id="top">
+        <a class="brand" href="#home" aria-label="Prashant Sharma home">
+          <span class="brand-mark" aria-hidden="true">P<span></span></span>
+          <span>Aspirant<span class="brand-dot">_prash</span></span>
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span></span><span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">My Work</a>
+          <a href="#journey">Journey</a>
+          <a class="nav-contact" href="#contact"
+            >Let's talk <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </header>
+
+      <main id="main">
+        <section
+          class="hero section-wrap"
+          id="home"
+          aria-labelledby="hero-title"
+        >
+          <span class="doodle doodle-star" aria-hidden="true">✳</span>
+          <span class="doodle doodle-squiggle" aria-hidden="true">〰</span>
+          <div class="hero-copy reveal">
+            <p class="eyebrow">
+              <span class="status-dot"></span> BCA Graduate · Learning by
+              building
+            </p>
+            <h1 id="hero-title">
+              I BUILD FOR<br />THE <span class="highlight-word">WEB.</span>
+            </h1>
+            <p class="hero-description">
+              Hi, I'm <strong>Prashant Sharma</strong> — an aspiring MERN Stack
+              Developer who enjoys turning ideas into useful, thoughtful web
+              experiences.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects"
+                >Explore my work <span aria-hidden="true">↘</span></a
+              >
+              <a class="text-link" href="#about"
+                >A little about me <span aria-hidden="true">→</span></a
+              >
+            </div>
+            <div class="hero-meta">
+              <span
+                ><span class="meta-icon" aria-hidden="true">⌘</span> HTML · CSS
+                · JavaScript</span
+              >
+              <span
+                ><span class="meta-icon" aria-hidden="true">↗</span> Open to
+                learning opportunities</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="hero-art reveal"
+            aria-label="Decorative illustration of a developer working on a laptop"
+          >
+            <div class="art-label label-top">IDEAS → INTERFACES</div>
+            <div class="art-sun" aria-hidden="true"></div>
+            <div class="art-card art-card-back" aria-hidden="true"></div>
+            <div class="art-window">
+              <div class="window-bar">
+                <span></span><span></span><span></span><b>my-next-project.js</b>
+              </div>
+              <div class="code-lines" aria-hidden="true">
+                <span class="code-line short"
+                  ><i>01</i><b>const</b> idea = <em>"curiosity"</em>;</span
+                >
+                <span class="code-line"
+                  ><i>02</i><b>function</b> <strong>build</strong>() {</span
+                >
+                <span class="code-line indent"
+                  ><i>03</i><span>learn();</span></span
+                >
+                <span class="code-line indent"
+                  ><i>04</i><span>create();</span></span
+                >
+                <span class="code-line"><i>05</i>}</span>
+                <span class="code-line last"
+                  ><i>06</i><mark>keepBuilding();</mark></span
+                >
+              </div>
+            </div>
+            <div class="developer-figure" aria-hidden="true">
+              <div class="figure-head">
+                <span class="hair"></span><span class="face"></span>
+              </div>
+              <div class="figure-neck"></div>
+              <div class="figure-body"><span class="shirt-detail"></span></div>
+              <div class="figure-arm arm-left"></div>
+              <div class="figure-arm arm-right"></div>
+            </div>
+            <div class="art-sticker sticker-yellow" aria-hidden="true">
+              <span>✦</span><small>STAY<br />CURIOUS</small>
+            </div>
+            <div class="art-sticker sticker-blue" aria-hidden="true">
+              &lt;/&gt;
+            </div>
+            <div class="art-availability">
+              <span class="status-dot"></span> Growing one project at a time
+            </div>
+            <div class="art-label label-bottom">
+              DESIGN IT. BUILD IT. LEARN.
+            </div>
+          </div>
+          <a
+            class="scroll-cue"
+            href="#about"
+            aria-label="Scroll to About section"
+            ><span></span> Scroll to explore</a
+          >
+        </section>
+
+        <section
+          class="services section-wrap section-block"
+          id="about"
+          aria-labelledby="about-title"
+        >
+          <div class="section-heading centered reveal">
+            <p class="eyebrow">A little introduction</p>
+            <h2 id="about-title">
+              Curious mind.<br /><span class="pink-underline"
+                >Builder mindset.</span
+              >
+            </h2>
+            <p class="section-intro">
+              I'm at the beginning of my developer journey — learning the
+              fundamentals, making projects, breaking things, and figuring out
+              how to make them better.
+            </p>
+          </div>
+          <div class="value-grid">
+            <article class="value-card value-pink reveal">
+              <div class="icon-tile icon-pink" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <rect x="5" y="7" width="38" height="31" rx="4" />
+                  <path
+                    d="M5 15h38M12 11h1m5 0h1m5 0h1M17 22l-5 5 5 5m14-10 5 5-5 5m-5-11-4 13"
+                  />
+                </svg>
+              </div>
+              <h3>Frontend Foundations</h3>
+              <p>
+                Building structured pages with HTML, styling them with CSS, and
+                adding real interactions with JavaScript.
+              </p>
+              <span class="card-index">01 / BUILD</span>
+            </article>
+            <article class="value-card value-teal reveal">
+              <div class="icon-tile icon-teal" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <circle cx="24" cy="24" r="17" />
+                  <circle cx="24" cy="24" r="10" />
+                  <circle cx="24" cy="24" r="3" />
+                  <path d="M24 7v8m17 9h-8M24 41v-8M7 24h8" />
+                </svg>
+              </div>
+              <h3>Learning by Doing</h3>
+              <p>
+                I learn best by turning concepts into small projects and
+                improving them step by step.
+              </p>
+              <span class="card-index">02 / LEARN</span>
+            </article>
+            <article class="value-card value-yellow reveal">
+              <div class="icon-tile icon-yellow" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <path
+                    d="M24 5 29 18 43 19 32 28 36 42 24 34 12 42 16 28 5 19 19 18Z"
+                  />
+                  <path d="m19 25 4 4 7-8" />
+                </svg>
+              </div>
+              <h3>Consistent Progress</h3>
+              <p>
+                My focus is on writing cleaner code, documenting my work, and
+                building a strong foundation for full-stack development.
+              </p>
+              <span class="card-index">03 / IMPROVE</span>
+            </article>
+          </div>
+        </section>
+
+        <section
+          class="skills-section section-wrap section-block"
+          id="skills"
+          aria-labelledby="skills-title"
+        >
+          <div class="split-heading reveal">
+            <div>
+              <p class="eyebrow">Tools in my toolkit</p>
+              <h2 id="skills-title">Learning the<br />building blocks.</h2>
+            </div>
+            <p>
+              These are the technologies I'm currently practising or working
+              towards. I believe in being honest about my level and showing
+              progress through projects.
+            </p>
+          </div>
+          <div class="skills-board reveal">
+            <div class="skill-row">
+              <span class="skill-symbol html-symbol">5</span>
+              <div class="skill-info">
+                <h3>HTML5</h3>
+                <p>Semantic structure & accessible markup</p>
+              </div>
+              <span class="skill-level level-current">Practice</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-symbol css-symbol">✳</span>
+              <div class="skill-info">
+                <h3>CSS3</h3>
+                <p>Layouts, responsive design & UI styling</p>
+              </div>
+              <span class="skill-level level-current">Practice</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-symbol js-symbol">JS</span>
+              <div class="skill-info">
+                <h3>JavaScript</h3>
+                <p>DOM, events, arrays & project logic</p>
+              </div>
+              <span class="skill-level level-current">Practice</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-symbol react-symbol">⚛</span>
+              <div class="skill-info">
+                <h3>React.js</h3>
+                <p>Next step in my learning journey</p>
+              </div>
+              <span class="skill-level level-next">Learning goal</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-symbol node-symbol">N</span>
+              <div class="skill-info">
+                <h3>Node.js · Express · MongoDB</h3>
+                <p>Backend and database fundamentals</p>
+              </div>
+              <span class="skill-level level-next">Learning goal</span>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="projects-section section-wrap section-block"
+          id="projects"
+          aria-labelledby="projects-title"
+        >
+          <div class="projects-heading reveal">
+            <div>
+              <p class="eyebrow">A few things I've made</p>
+              <h2 id="projects-title">
+                Learning looks<br /><span class="pink-underline"
+                  >better in projects.</span
+                >
+              </h2>
+            </div>
+            <p>
+              Small projects, real practice. Each one helps me understand how
+              the web works a little better.
+            </p>
+          </div>
+          <div
+            class="project-toolbar reveal"
+            role="group"
+            aria-label="Filter projects"
+          >
+            <button
+              class="filter-btn active"
+              type="button"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              All projects <span>05</span>
+            </button>
+            <button
+              class="filter-btn"
+              type="button"
+              data-filter="utility"
+              aria-pressed="false"
+            >
+              Useful tools
+            </button>
+            <button
+              class="filter-btn"
+              type="button"
+              data-filter="interactive"
+              aria-pressed="false"
+            >
+              Interactive
+            </button>
+          </div>
+          <p class="project-count" id="project-status" aria-live="polite">
+            Showing <span id="visible-count">5</span> projects
+          </p>
+          <div class="project-grid" id="project-grid">
+            <article
+              class="project-card project-weather reveal"
+              data-category="utility"
+            >
+              <div class="project-preview weather-preview" aria-hidden="true">
+                <div class="preview-top">
+                  <span>weather now</span><span>↗</span>
+                </div>
+                <div class="weather-sun"></div>
+                <strong>24°</strong><small>Partly sunny</small>
+                <div class="weather-bars">
+                  <i></i><i></i><i></i><i></i><i></i>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+                <h3>Weather Now</h3>
+                <p>
+                  A weather dashboard concept for exploring current conditions
+                  and forecasts. Connect your API key before presenting live
+                  data.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://aspirantprash-mern.netlify.app/02-javascript_practice/09-Weather%20Web%20App/weather.html"
+                    class="placeholder-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo <span>↗</span>
+                  </a>
+
+                  <a
+                    href="https://github.com/aspirantprash/MERN-Stack-Journey"
+                    class="placeholder-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub <span>↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article
+              class="project-card project-students reveal"
+              data-category="utility"
+            >
+              <div class="project-preview students-preview" aria-hidden="true">
+                <div class="students-preview-title">
+                  Student roster <span>✦</span>
+                </div>
+                <div class="student-row">
+                  <b>AS</b> Aanya Shah <span>92%</span>
+                </div>
+                <div class="student-row">
+                  <b>RK</b> Rohan Kumar <span>85%</span>
+                </div>
+                <div class="student-row">
+                  <b>MP</b> Meera Patel <span>78%</span>
+                </div>
+                <div class="student-summary">3 students · Class 10A</div>
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+                <h3>Student Management System</h3>
+                <p>
+                  A student records dashboard for managing profiles, tracking
+                  grades, and organizing classroom information.
+                </p>
+                <div class="project-links">
+                  <a href="#" class="placeholder-link" data-link="students-demo"
+                    >Live demo <span>↗</span></a
+                  ><a
+                    href="#"
+                    class="placeholder-link"
+                    data-link="students-github"
+                    >GitHub <span>↗</span></a
+                  >
+                </div>
+              </div>
+            </article>
+            <article
+              class="project-card project-calc reveal"
+              data-category="interactive"
+            >
+              <div class="project-preview calc-preview" aria-hidden="true">
+                <div class="calc-display">2,026</div>
+                <div class="calc-keys">
+                  <i>AC</i><i>±</i><i>%</i><i class="operator">÷</i><i>7</i
+                  ><i>8</i><i>9</i><i class="operator">×</i><i>4</i><i>5</i
+                  ><i>6</i><i class="operator">−</i><i>1</i><i>2</i><i>3</i
+                  ><i class="operator">+</i><i class="zero">0</i><i>.</i
+                  ><i class="operator">=</i>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span>JavaScript</span><span>UI</span>
+                </div>
+                <h3>Calculator</h3>
+                <p>
+                  A clean calculator project focused on button events, input
+                  handling, and basic arithmetic.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="#"
+                    class="placeholder-link"
+                    data-link="calculator-demo"
+                    >Live demo <span>↗</span></a
+                  ><a
+                    href="#"
+                    class="placeholder-link"
+                    data-link="calculator-github"
+                    >GitHub <span>↗</span></a
+                  >
+                </div>
+              </div>
+            </article>
+            <article
+              class="project-card project-jokes reveal"
+              data-category="interactive"
+            >
+              <div class="project-preview jokes-preview" aria-hidden="true">
+                <div class="jokes-mini-header">
+                  <strong
+                    ><span>😄</span> JokeBox<span class="brand-dot"
+                      >.</span
+                    ></strong
+                  >
+                  <small>DAILY DOSE OF FUN</small>
+                </div>
+                <div class="jokes-mini-card">
+                  <div class="jokes-hero">
+                    <span class="jokes-spark">✦</span>
+                    <span class="jokes-face">😎</span>
+                    <span class="jokes-spark">✧</span>
+                  </div>
+                  <strong class="joke-quote">
+                    Why did the developer go broke?
+                  </strong>
+                  <span class="joke-answer">
+                    They used up all their cache! 🤑
+                  </span>
+                  <span class="joke-button">↻ &nbsp; Tell me another joke</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span>JavaScript</span><span>API</span><span>DOM</span>
+                </div>
+                <h3>Programming Jokes</h3>
+                <p>Quick laughs for developers.</p>
+                <div class="project-links">
+                  <a href="#" class="placeholder-link" data-link="jokes-demo"
+                    >Live demo <span>↗</span></a
+                  ><a href="#" class="placeholder-link" data-link="jokes-github"
+                    >GitHub <span>↗</span></a
+                  >
+                </div>
+              </div>
+            </article>
+            <article
+              class="project-card project-guess reveal"
+              data-category="interactive"
+            >
+              <div class="project-preview guess-preview" aria-hidden="true">
+                <span class="guess-kicker">CAN YOU GUESS IT?</span>
+                <div class="guess-number">?</div>
+                <div class="guess-dashes">
+                  <i></i><i></i><i></i><i></i><i></i>
+                </div>
+                <span class="guess-pill">Make a guess ↗</span>
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span>Logic</span><span>JavaScript</span>
+                </div>
+                <h3>Number Guessing Game</h3>
+                <p>
+                  A playful logic game to practise conditions, random numbers,
+                  and user feedback.
+                </p>
+                <div class="project-links">
+                  <a href="#" class="placeholder-link" data-link="guess-demo"
+                    >Live demo <span>↗</span></a
+                  ><a href="#" class="placeholder-link" data-link="guess-github"
+                    >GitHub <span>↗</span></a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="empty-state" id="empty-state" hidden>
+            No projects match this filter yet.
+          </div>
+        </section>
+
+        <section
+          class="journey-section section-wrap section-block"
+          id="journey"
+          aria-labelledby="journey-title"
+        >
+          <div class="journey-intro reveal">
+            <p class="eyebrow">One step at a time</p>
+            <h2 id="journey-title">
+              My learning<br />journey<span class="yellow-period">.</span>
+            </h2>
+            <p>
+              No overnight success story — just consistent practice, one concept
+              and one project at a time.
+            </p>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <span class="timeline-number">01</span>
+              <div>
+                <span class="timeline-label">FOUNDATION</span>
+                <h3>HTML & CSS</h3>
+                <p>
+                  Learning to structure pages, create layouts, and make websites
+                  responsive.
+                </p>
+              </div>
+              <span class="timeline-state">Built projects</span>
+            </article>
+            <article class="timeline-item reveal">
+              <span class="timeline-number">02</span>
+              <div>
+                <span class="timeline-label">CURRENT FOCUS</span>
+                <h3>JavaScript</h3>
+                <p>
+                  Practice DOM manipulation, events, conditions, functions, and
+                  project logic.
+                </p>
+              </div>
+              <span class="timeline-state state-current">In progress</span>
+            </article>
+            <article class="timeline-item reveal">
+              <span class="timeline-number">03</span>
+              <div>
+                <span class="timeline-label">NEXT MILESTONE</span>
+                <h3>React & APIs</h3>
+                <p>
+                  Build component-based interfaces and learn how frontend apps
+                  use APIs.
+                </p>
+              </div>
+              <span class="timeline-state state-next">Coming next</span>
+            </article>
+            <article class="timeline-item reveal">
+              <span class="timeline-number">04</span>
+              <div>
+                <span class="timeline-label">LONG-TERM GOAL</span>
+                <h3>MERN Stack</h3>
+                <p>
+                  Connect frontend, backend, and databases to build full-stack
+                  applications.
+                </p>
+              </div>
+              <span class="timeline-state state-next">Future goal</span>
+            </article>
+          </div>
+        </section>
+
+        <section
+          class="education-section section-wrap section-block"
+          id="education"
+          aria-labelledby="education-title"
+        >
+          <div class="education-card reveal">
+            <div class="education-icon" aria-hidden="true">✳</div>
+            <div>
+              <p class="eyebrow">The academic chapter</p>
+              <h2 id="education-title">Education</h2>
+              <h3>Bachelor of Computer Applications (BCA)</h3>
+              <p>Completed in 2026</p>
+              <span class="education-note">Patliputra University</span>
+            </div>
+            <span class="education-year">2026</span>
+          </div>
+        </section>
+
+        <section
+          class="contact-section section-wrap section-block"
+          id="contact"
+          aria-labelledby="contact-title"
+        >
+          <div class="contact-panel reveal">
+            <span class="contact-shape shape-one" aria-hidden="true">✳</span
+            ><span class="contact-shape shape-two" aria-hidden="true">↗</span>
+            <p class="eyebrow">Have an opportunity or idea?</p>
+            <h2 id="contact-title">
+              Let's make<br />something <span>useful.</span>
+            </h2>
+            <p class="contact-copy">
+              I'm building my skills and portfolio. If you'd like to connect,
+              share feedback, or discuss a suitable entry-level opportunity, I'd
+              be glad to hear from you.
+            </p>
+            <a
+              class="button button-dark"
+              href="mailto:YOUR_EMAIL@example.com"
+              id="email-link"
+              >Say hello <span aria-hidden="true">↗</span></a
+            >
+            <div class="social-links">
+              <a href="#" class="placeholder-link" data-link="github-profile"
+                >GitHub <span>↗</span></a
+              >
+              <a href="#" class="placeholder-link" data-link="linkedin-profile"
+                >LinkedIn <span>↗</span></a
+              >
+              <a href="#" class="placeholder-link" data-link="instagram-profile"
+                >Instagram <span>↗</span></a
+              >
+            </div>
+            <p class="contact-placeholder">
+              Remember to replace the placeholder email and social links in
+              index.html.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer section-wrap">
+        <a class="brand footer-brand" href="#top"
+          ><span class="brand-mark" aria-hidden="true">P<span>.</span></span
+          ><span>prashant<span class="brand-dot">.dev</span></span></a
+        >
+        <p>Designed with curiosity. Built with practice.</p>
+        <p>© <span id="current-year"></span> Prashant Sharma</p>
+        <a class="back-top" href="#top" aria-label="Back to top">↑</a>
+      </footer>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
